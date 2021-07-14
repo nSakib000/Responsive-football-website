@@ -3,14 +3,18 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-
+.container{
+    margin-bottom: 30px;
+}
 main{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-/* Banner */
+/* ----------------------------------
+        Banner Section styles
+------------------------------------- */
 .title{
     width: 485px;
     height: 230px;
@@ -33,6 +37,11 @@ main{
     margin-left: 30px;
     max-width: 90%;    
     height: 438px;
+    transition: background-color 1.5s ease-in-out;
+    
+}
+.banner img:hover{
+    background-color: cornflowerblue;
 }
 .title{
     margin: 0 60px;
@@ -51,7 +60,10 @@ main{
     background: #E02C6D;
     padding: 10px 24px;
 }
-
+.heading-section a:hover{
+    background-color: blueviolet;
+    transition: 1.5s;
+}
 
 /* player sction styles */
 .players{
@@ -76,11 +88,16 @@ main{
     font-size: 28px;
 }
 .player-info{
+    color: #6C6C6C;
     padding: 0px 15px;
     font-size: 16px;
 }
 
 /* highlights section style   */
+.section-title{
+    text-align: center;
+    font-size: 40px;    
+}
 .match{
     display: flex;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -93,6 +110,8 @@ main{
     padding: 0 20px;
 }
 .match-info{
+    color: #6C6C6C;
+    font-size: 20px;
     margin: 0;
 }
 .video-thumbnail{
@@ -105,8 +124,10 @@ main{
 }
 
 /* table area  */
+
 .points-section{
     margin-top: 25px;
+  
 }
 
 table{
@@ -176,11 +197,19 @@ footer .logo img{
     .container, .heading{
         width: 100%;
     }
+    .banner-section{
+        height: 695px;
+        left: 0px;
+        top: 0px;
+    }
+    .title{
+        margin-left: 0;
+    }
     .heading-section a {
         display: block;
         text-decoration: none;
         background: #E02C6D;
-    padding: 10px 24px;
+        padding: 10px 24px;
     }
     /* h1 .title{
         font-size: 36px;
@@ -190,6 +219,7 @@ footer .logo img{
     }
     .match{
         flex-direction: column;
+        margin-top: 20px;
     }
     .video-thumbnail iframe{
         width:315px;
@@ -202,4 +232,13 @@ footer .logo img{
         width: 260px;
         height: 100px;
     }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .video-thumbnail iframe{
+        width:215px;
+        height: 200px;
 }
