@@ -1,0 +1,188 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* Banner */
+.title{
+    width: 485px;
+    height: 230px;
+}
+.banner-section{
+    display: flex;   
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+    margin-bottom: 27px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+ }
+.heading-section{
+    width: 50%;
+}
+.banner img{
+    max-width: 90%;    
+    height: 438px;
+}
+.heading a{
+    color: #FFFFFF;
+}
+.title{
+    width:90%;
+    color: #FFFFFF;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* player sction styles */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin:0 15px 27px 15px;
+}
+
+.player img{
+    width: 300px;
+    height: 256px;
+    padding: 15px;
+}
+.player-name{
+    padding: 0px 15px;
+    margin:0;
+    font-size: 28px;
+}
+.player-info{
+    padding: 0px 15px;
+    font-size: 16px;
+}
+
+/* highlights section style   */
+.highlights{
+    display: flex;
+    align-items: center;   
+}
+.highlights-detail{
+    width: 100%;
+    height: 310px;
+    margin-left: 182px;
+    margin-right: 66px;
+   
+}
+.highlights-heading{
+    color: #0A0826;
+    font-weight: bold;
+    font-size: 48px;
+}
+.highlights-thumbnail img{
+    width: 90%;
+    height: 427px;   
+}
+
+
+/* ------- */
+.match{
+    display: flex;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.match-details{
+    width: 100%;
+    padding: 0 20px;
+}
+.match-info{
+    margin: 0;
+}
+.video-thumbnail{
+    width: 80%;
+    padding: 15px 0;
+    
+    border-radius: 10px;
+}
+.video-thumbnail iframe{
+    border-radius: 5px;
+}
+
+/* table area  */
+.points-section{
+    margin-top: 25px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    text-align: left;
+    padding:15px 30px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* footer area  */
+footer{
+    margin-top: 30px;
+}
+footer .logo img{
+    width: 483.87px;
+    height: 110px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.social-links{
+    text-align: center;
+    
+}
+.fab, .fas{
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.fa-instagram.insta{
+    color: rgb(212, 47, 83);
+    
+}
+.fa-instagram.insta:hover{
+    font-weight: 700;   
+}
+.fa-futbol.football{
+    color: rgb(39, 11, 90);
+}
+.fa-futbol.football:hover{
+    font-weight: 700; 
+}
+.fa-twitter.twitt{
+    color: rgb(82, 143, 212);
+}
+.fa-twitter.twitt:hover{
+    font-weight: 700; 
+}
+.fa-youtube.utube{
+    color: rgb(236, 6, 6);
+}
+.fa-youtube.utube:hover{
+    font-weight: 700;
+}
+.copyright{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* For Mobile Devices */
