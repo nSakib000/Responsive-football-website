@@ -1,5 +1,11 @@
-/* fonts  */
+
+/*-------------- fonts--------------------------  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+/* -----------------------
+    Common Styles
+----------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -15,12 +21,14 @@ main{
 /* ----------------------------------
         Banner Section styles
 ------------------------------------- */
-.title{
+h1 .title{
     width: 485px;
     height: 230px;
+    margin-bottom: 30px;
 }
 .banner-section{
-    display: flex;   
+    display: flex; 
+    align-items: center;  
     width: 100%;
     height: 677px;
     background-color: #2D25A0;
@@ -28,14 +36,13 @@ main{
 }
 .heading{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
  }
-.heading-section{
-    width: 50%;
-}
+
 .banner img{
-    margin-left: 30px;
-    max-width: 90%;    
+    width: 90%;    
     height: 438px;
     transition: background-color 1.5s ease-in-out;
     
@@ -50,12 +57,10 @@ main{
     font-size: 60px;
     text-align: center;
 }
-.heading-section a{
+.heading a{
     display: block;
     font-size: 16px;
     color: #FFFFFF;
-    position: absolute;
-    left: 156px;
     text-decoration: none;
     background: #E02C6D;
     padding: 10px 24px;
@@ -65,7 +70,9 @@ main{
     transition: 1.5s;
 }
 
-/* player sction styles */
+/* -----------------------------------
+        player sction styles
+---------------------------------------- */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);   
@@ -93,7 +100,9 @@ main{
     font-size: 16px;
 }
 
-/* highlights section style   */
+/*------------------------------------- 
+        highlights section style   
+--------------------------------------*/
 .section-title{
     text-align: center;
     font-size: 40px;    
@@ -123,7 +132,9 @@ main{
     border-radius: 5px;
 }
 
-/* table area  */
+/*-------------------------- 
+            table area
+ ------------------------ */
 
 .points-section{
     margin-top: 25px;
@@ -141,7 +152,9 @@ th,td{
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-/* footer area  */
+/*-------------------------------- 
+        footer area 
+------------------------- */
 footer{
     margin-top: 30px;
 }
@@ -190,30 +203,36 @@ footer .logo img{
     text-align: center;
 }
 
-/* Media Queries */
+/*-------------------------------
+            Media Queries
+ ------------------------------------- */
 
-/* For Mobile Devices */
+/*--------------------------------   
+        For Mobile Devices
+-------------------------------- */
+
 @media only screen and (max-width:688px) {
-    .container, .heading{
-        width: 100%;
-    }
     .banner-section{
+        flex-direction: column;
+        justify-content: center;
         height: 695px;
-        left: 0px;
-        top: 0px;
     }
-    .title{
-        margin-left: 0;
+    .banner img{
+        width: 329px;
+        height: 260px;
     }
+
     .heading-section a {
         display: block;
         text-decoration: none;
         background: #E02C6D;
         padding: 10px 24px;
     }
-    /* h1 .title{
+    .title{
         font-size: 36px;
-    } */
+        height: 200px;
+    }
+
      .players{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -234,7 +253,15 @@ footer .logo img{
     }
 }
 
+/*------------------------------------
+        Tablet Devices
+ ----------------------------- */
 @media only screen and (min-width:688px) and (max-width:992px) {
+    .banner-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .players{
         grid-template-columns: repeat(2, 1fr);
     }
